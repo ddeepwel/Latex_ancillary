@@ -1,0 +1,41 @@
+% A set of commands for making math easier in Latex. It cleans up the beginning of the Latex file.
+%
+% David Deepwell, 2017
+\usepackage{suffix}             % To create overloaded commands
+
+    % Formatting 
+\newcommand{\horrule}[1][0.5pt]{\noindent\rule{\textwidth}{#1}}         % Horizontal rule
+\newcommand{\parspace}{\setlength{\parskip}{10pt plus 1pt minus 1pt}}   % Extra vertical space between paragraphs
+\newcommand{\al}[1]{\begin{align} #1 \end{align}}                       % Align space
+\WithSuffix\newcommand\al*[1]{\begin{align*} #1 \end{align*}}           % Unnumbered align space
+\newcommand{\eq}[1]{\begin{equation} #1 \end{equation}}                 % Equation
+\WithSuffix\newcommand\eq*[1]{\begin{equation*} #1 \end{equation*}}     % Unnumbered equation
+
+    % Math
+\newcommand{\di}{\partial}                                              % Simplified version of partial
+\newcommand{\der}[3][]{\frac{d^{#1} #2}{d #3^{#1}}}                     % Write a derivative with optional order of differentiation
+\newcommand{\pder}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}      % Write a partial derivative with optional order of differentiation
+\newcommand{\mder}[2]{\frac{D#1}{D#2}}                                  % Write a material derivative
+\newcommand{\bigO}{\mathcal{O}}                                         % Big O notation
+\newcommand{\smallO}[1]{o{\left(#1\right)}}                             % Little O
+\newcommand{\fourier}[2][]{\mathscr{F}^{#1}\bracep{#2}}                 % Fourier transform
+
+    % Vector Algebra
+\newcommand{\vect}[1]{\mathbf{#1}}                  % Write as a vector
+\newcommand{\vgrad}[1]{\nabla #1}                   % Gradient
+\newcommand{\vlapl}[1]{\nabla^2 #1}                 % Laplacian
+\newcommand{\vdiv}[1]{\mathbf{\nabla \cdot #1}}     % Divergence
+\newcommand{\vcurl}[1]{\mathbf{\nabla \times #1}}   % Divergence
+
+    % Math typesetting and functions
+\newcommand{\paren}[1]{\left( #1 \right)}               % Brackets
+\newcommand{\sqp}[1]{\left[ #1 \right]}                 % Square brackets
+\newcommand{\bracep}[1]{\left\{ #1 \right\}}            % Curly brackets
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}   % Floor function
+\newcommand{\ceil}[1]{{\left\lceil #1 \right\rceil}}    % Ceiling function
+\newcommand{\abs}[1]{\left|#1\right|}                   % Absolute value function
+\newcommand{\ubrc}[2]{\underbrace{#1}_\text{#2}}        % Under brace with text
+
+    % Fluid Mechanics
+\newcommand{\Ren}{\text{Re}}        % Reynolds number
+\newcommand{\Sc}{\text{Sc}}         % Schmidt number

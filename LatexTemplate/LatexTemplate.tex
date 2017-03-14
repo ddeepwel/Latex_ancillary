@@ -1,0 +1,59 @@
+%----------------------------------------------------------------------------------------
+%	Settings and packages
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article}
+
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx,caption,subcaption}	
+\usepackage{amsmath,amssymb,amsfonts,bm,mathrsfs}
+\usepackage{fullpage}
+\usepackage{array,enumerate}
+\usepackage{cite,verbatim}
+%\usepackage{hyperref}
+%\usepackage{fancyhdr}				% together with the next line
+%\pagestyle{fancy}
+
+%\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+%\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for for rotated page geometry
+
+%----------------------------------------------------------------------------------------
+%	Create new commands
+%----------------------------------------------------------------------------------------
+
+% Commands are in LatexCommands.tex. New commands for this file only can be written here.
+\input{/Applications/TeX/Commands/LatexCommands.tex}
+
+
+%----------------------------------------------------------------------------------------
+%	Front matter
+%----------------------------------------------------------------------------------------
+
+\title{	
+\horrule[0.5pt] \\[0.3cm] 
+\huge Assignment Title
+\horrule[2pt]
+}
+\author{David Deepwell}
+\date{\today}
+
+
+%----------------------------------------------------------------------------------------
+%	Start document
+%----------------------------------------------------------------------------------------
+
+
+\begin{document}
+\maketitle
+
+
+The Reynolds number, $\Ren$, is useful because is shows up in the Navier-Stokes equations: 
+\[ \pder{\vect{u}}{t} + \paren{\vect{u}\cdot\nabla} \vect{u}=-\frac{\vgrad{p}}{\rho}+\vect{g} + \nu \vlapl{\vect{u}}\]
+Other useful commands are used in the following  $\vgrad{u}$, and now $\der[3]{y}{x}$.
+
+
+
+
+\end{document}  
+

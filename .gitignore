@@ -1,0 +1,37 @@
+# Core latex/pdflatex auxiliary files:
+*.aux
+*.lof
+*.log
+*.err
+*.lot
+*.fls
+*.out
+*.toc
+
+# Bibliography auxiliary files (bibtex/biblatex/biber):
+*.bbl
+*.blg
+
+# Build tool auxiliary files:
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+# Intermediate documents:
+*-converted-to.*
+
+# Beamer:
+*.nav
+*.pre
+*.snm
+*.vrb
+
+# Hyperref:
+*.brf
+
+# Other:
+.smb*
+.DS_Store
