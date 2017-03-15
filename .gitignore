@@ -22,6 +22,7 @@
 
 # Intermediate documents:
 *-converted-to.*
+*.pdf
 
 # Beamer:
 *.nav
