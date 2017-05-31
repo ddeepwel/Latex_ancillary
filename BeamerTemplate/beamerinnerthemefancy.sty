@@ -5,6 +5,8 @@
 % 1. under the LaTeX Project Public License and/or
 % 2. under the GNU Public License.
 
+\usefonttheme{serif}
+\beamertemplatenavigationsymbolsempty
 \mode<presentation>
 
 % Use alternative title page style.
@@ -28,9 +30,9 @@
 
 % Lengths.
 \newlength{\beamer@fancy@lineup}
-\setlength{\beamer@fancy@lineup}{.025\paperheight}
+\setlength{\beamer@fancy@lineup}{.015\paperheight}
 \newlength{\beamer@fancy@linemid}
-\setlength{\beamer@fancy@linemid}{.015\paperheight}
+\setlength{\beamer@fancy@linemid}{.01\paperheight}
 \newlength{\beamer@fancy@linebottom}
 \setlength{\beamer@fancy@linebottom}{.01\paperheight}
 
@@ -51,7 +53,7 @@
   \hbox{\hskip-\Gm@lmargin\hbox{\vbox{%
   \@tempdima=\textwidth\textwidth=\paperwidth\hsize=\textwidth\def\\{,}\vbox{}\vskip-1.5ex%
     % Title.
-    \begin{beamercolorbox}[wd=\paperwidth,ht=.4\paperheight,center,#1]{title page header}
+    \begin{beamercolorbox}[wd=\paperwidth,ht=.35\paperheight,center,#1]{title page header}
       \usebeamerfont{title}\inserttitle\par%
       \ifx\insertsubtitle\@empty%
       \else%
